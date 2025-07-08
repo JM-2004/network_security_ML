@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: network-ml-app
+    env: docker
+    plan: free
+    repo: https://github.com/JM-2004/network_security_ML
+    branch: main
+    autoDeploy: true
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
